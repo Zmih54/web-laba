@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Платформа з продажу та обміну речей</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Сайт з продажу та обміну речей</h1>
+        <img src="https://cdn-icons-png.flaticon.com/512/10074/10074860.png" width="30%">
         <reg>
             <form action="/user.html">
                 Логін:<br>
@@ -21,17 +23,16 @@
                 <input type="submit" value="Реєстрація">
               </form>
         </reg>
-        <img src="https://cdn-icons-png.flaticon.com/512/10074/10074860.png" width="30%">
     </header>
     <main>
         <h2>Основні можливості</h2>
-        <ul>
+        <ul id="list1">
             <li>Обмін навчальними матеріалами</li>
             <li>Продаж навчальних ресурсів</li>
             <li>Оцінювання та відгуки</li>
         </ul>
         <h3>Тарифи</h3>
-        <table border="1">
+        <table border="1" id="Taxes">
             <tr>
                 <td>Створення оголошення</td>
                 <td>Комісія з продажу</td>
@@ -43,14 +44,22 @@
                 <td>Безкоштовно раз на тиждень</td>
             </tr>
         </table>
-        <h3>Яу зареєструватися?</h3>
-        <ol>
+        <h3>Як зареєструватися?</h3>
+        <ol class="numberList">
             <li>Придумати логін</li>
             <li>Придумати пароль</li>
             <li>Натиснути кнопку "Реєстрація"</li>
         </ol>
-        <h3>Посилання на опис предметної галузі</h3>
-        <a href="/description.html">Натисніть мене</a>
-
+        <h3>Про нас</h3>
+        <div class="about">
+            <img src="https://static.vecteezy.com/system/resources/previews/010/159/990/original/people-icon-sign-symbol-design-free-png.png" width="30%">
+            <p>Платформа з продажу та обміну речей - це сайт, який дозволяє користувачам обмінюватися та продавати навчальні матеріали. На сайті можна знайти різні навчальні матеріали, які можна придбати або обміняти на інші. Також на сайті є можливість залишати відгуки та оцінювати інші оголошення.</p>
+        </div>
+        <h3 id="contacts">Контакти</h3>
+       <ul>
+        <li>Платформа з продажу та обміну речей</li>
+                <li>м. Київ, вул. Героїв України, 24</li>
+                <li>+380 67 123 4567</li>
+       </ul>
     </main>
 </body>
