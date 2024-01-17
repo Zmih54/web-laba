@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    width: 1660px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 1660px;
+    margin: 0 auto;
+}
+
+.top, .bottom {
+    width: 100%;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    height: 80px; 
+  }
+
+
+.center-container {
+    display: flex;
+    flex-grow: 1; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch; 
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0px;
+}
+
+.center {
+    flex: 1; 
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 0px;
+    width: 300px;
+}
+
+#list1, .numberList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#list1 li {
+    margin-bottom: 10px;
+}
+
+.numberList li {
+    margin-bottom: 10px;
+}
+
+#Taxes {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#Taxes th, #Taxes td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#Taxes th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.bottom {
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+}
+
+#contacts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contacts li {
+    margin-bottom: 10px;
+}
+
+#contacts li:first-child {
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}

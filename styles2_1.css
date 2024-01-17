@@ -4,46 +4,41 @@ body {
   }
   
   .wrapper {
-    display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 100vh;
+    display: table;
+    width: 100%;
   }
   
+  .right-sidebar{
+    width: 100px;
+  }
+
+  .left-sidebar {
+    width: 200px;
+    background-color: #f0f0f0;
+  }
   
   .top-section,
+  .center-content,
   .bottom-section {
-        width: 100%;
-        background-color: lightblue;
-        padding: 20px;
-        box-sizing: border-box
+    display: table-cell;
+    padding: 20px;
+    vertical-align: middle;
   }
   
-
-
+  .top-section {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+  }
   
   .center-content {
-    display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        width: 100%;
-        box-sizing: border-box;
+    background-color: #ecf0f1;
   }
-
-  .center {
-    width: 30%; /* Задайте ширину блока відповідно до ваших потреб */
-    background-color: lightgreen;
-    padding: 20px;
-    box-sizing: border-box;
-    margin-top: 20px;
-}
   
   .bottom-section {
-    width: 100%;
-        background-color: lightblue;
-        padding: 20px;
-        box-sizing: border-box;
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
   }
   
   main {
@@ -99,4 +94,6 @@ body {
   #contacts li {
     margin-bottom: 10px;
   }
+
+  
   
