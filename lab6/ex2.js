@@ -12,9 +12,15 @@ const cityNames = Object.keys(concerts);
 
 // Фільтрація міст, які ще не мали концерту та відсортування за датою
 const upcomingCities = cityNames
-    .filter((city) => concerts[city] > new Date())
-    .sort((cityA, cityB) => concerts[cityA] - concerts[cityB])
-    .map((city) => city);
+    .filter(function(city) {
+        return concerts[city] > new Date();
+    })
+    .sort(function(cityA, cityB) {
+        return concerts[cityA] - concerts[cityB];
+    })
+    .map(function(city) {
+        return city;
+    });
 
 // Виведення результату у консоль
 console.log(upcomingCities);

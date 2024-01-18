@@ -6,13 +6,13 @@ const medicines = [
 ];
 
 function applyDiscount(medicines) {
-    const discountedMedicines = medicines.map((medicine) => {
+    const discountedMedicines = medicines.map(function(medicine) {
         // Перевірка, чи потрібно застосовувати знижку
         if (medicine.price > 300) {
             // Розрахунок нової ціни зі знижкою на 30%
             const discountedPrice = 0.7 * medicine.price;
             // Повертаємо новий об'єкт з новою ціною та ідентифікатором
-            return { ...medicine, price: discountedPrice };
+            return Object.assign({}, medicine, { price: discountedPrice });
         }
         // Якщо ціна не перевищує 300 грн, повертаємо оригінальний об'єкт
         return medicine;
@@ -24,3 +24,5 @@ function applyDiscount(medicines) {
 // Виклик функції та виведення результату у консоль
 const result = applyDiscount(medicines);
 console.log(result);
+
+
